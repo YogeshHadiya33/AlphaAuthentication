@@ -1,0 +1,30 @@
+﻿@model ResponseURLModel
+
+@if (Model.Authentication)
+{
+
+    <div class="col-12">
+        <span><b>Account Token:</b></span> <span> @Model.AC</span>
+    </div>
+    <div class="col-12 mt-1">
+        <span><b>Lead Id:</b></span> <span> @Model.Id</span>
+    </div>
+    <div class="col-12 mt-1">
+        <span><b>URL:</b></span> <span>@Model.FullURL</span>
+    </div>
+    <div class="col-12 mt-1">
+        <span><b>JSON URL:</b></span> <span>@Model.JsonUrl</span>
+    </div>
+
+}
+else
+{
+
+    <div class="col-10">
+        <div class="alert alert-outline-danger d-flex align-items-center" role="alert">
+            <span class="fas fa-times-circle text-danger fs-3 me-3"></span>
+            <p class="mb-0 flex-1">@Model.Message</p>
+        </div>
+    </div>
+
+}

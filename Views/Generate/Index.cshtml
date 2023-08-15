@@ -1,0 +1,70 @@
+﻿
+<div class="row">
+    <div class="mb-3 row text-start">
+        <div class="col-12">
+            <div class="form-floating">
+                <input class="form-control form-control-lg" type="text" autocomplete="off" id="txtId"
+                       onkeypress="return isNumber(event)">
+                <label>Id </label>
+            </div>
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <div class="col-12">
+            <button class="btn btn-primary w-100" type="button" onclick="GenerateUrl()">Generate URL </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="row hide p-2" id="divResponse">
+</div>
+
+
+@section Scripts{
+    <script>
+        $('#txtId').keypress(function (event) {
+            let id = $(this).val();
+            if (id != null && id != "" && typeof id != "undefined") {
+                $("#txtId").removeClass("is-invalid");
+            }
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if (keycode == '13') {
+                GenerateUrl();
+            }
+        });
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if ((charCode > 31 && charCode < 48) || charCode > 57) {
+                return false;
+            }
+            return true;
+        }
+        function GenerateUrl() {
+
+            let id = $("#txtId").val();
+            if (id != null && id != "" && typeof id != "undefined") {
+                $(".preloader").show();
+                $("#txtId").removeClass("is-invalid");
+                $("#divResponse").addClass("hide");
+                $.ajax({
+                    url: "/Generate/Generate",
+                    data: { id: id },
+                    type: "GET",
+                    success: function (data) {
+                        $(".preloader").hide();
+                        $("#divResponse").removeClass("hide");
+                        $("#divResponse").html(data);
+                    },
+                    error: function (data) {
+                        $(".preloader").hide();
+                    }
+
+                });
+            } else {
+                $("#txtId").addClass("is-invalid");
+            }
+        }
+    </script>
+}

@@ -1,0 +1,448 @@
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:01:41
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+Trace message     :    at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:01:42
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+Trace message     :    at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:05:13
+Source			: AppCommon=Decrypt
+Error line number : line 84
+Error message     : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+Trace message     :    at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted) in D:\My Codes\Arudha\AlphaAuthentication\Common\AppCommon.cs:line 84
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:05:19
+Source			: AppCommon=Decrypt
+Error line number : line 84
+Error message     : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+Trace message     :    at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted) in D:\My Codes\Arudha\AlphaAuthentication\Common\AppCommon.cs:line 84
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:05:19
+Source			: AppCommon=Decrypt
+Error line number : line 84
+Error message     : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+Trace message     :    at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted) in D:\My Codes\Arudha\AlphaAuthentication\Common\AppCommon.cs:line 84
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:05:26
+Source			: AppCommon=Decrypt
+Error line number : line 84
+Error message     : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+Trace message     :    at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted) in D:\My Codes\Arudha\AlphaAuthentication\Common\AppCommon.cs:line 84
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:05:33
+Source			: AppCommon=Decrypt
+Error line number : line 84
+Error message     : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+Trace message     :    at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted) in D:\My Codes\Arudha\AlphaAuthentication\Common\AppCommon.cs:line 84
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:10:05
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+Trace message     :    at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:12:52
+Source			: AppCommon=Decrypt
+Error line number : line 84
+Error message     : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+Trace message     :    at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted) in D:\My Codes\Arudha\AlphaAuthentication\Common\AppCommon.cs:line 84
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:12:56
+Source			: AppCommon=Decrypt
+Error line number : line 84
+Error message     : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+Trace message     :    at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted) in D:\My Codes\Arudha\AlphaAuthentication\Common\AppCommon.cs:line 84
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:19:15
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : String cannot contain a minus sign if the base is not 10.String cannot contain a minus sign if the base is not 10.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:19:15
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : String cannot contain a minus sign if the base is not 10.String cannot contain a minus sign if the base is not 10.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:19:28
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : String cannot contain a minus sign if the base is not 10.String cannot contain a minus sign if the base is not 10.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:19:28
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : String cannot contain a minus sign if the base is not 10.String cannot contain a minus sign if the base is not 10.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:28:17
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : The input data is not a complete block.The input data is not a complete block.
+Trace message     :    at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:28:39
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : The input data is not a complete block.The input data is not a complete block.
+Trace message     :    at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:34:14
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:35:57
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:35:57
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : The input data is not a complete block.The input data is not a complete block.
+Trace message     :    at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:36:02
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:36:02
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:36:16
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:36:16
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:36:20
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Could not find any recognizable digits.Could not find any recognizable digits.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:36:33
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Could not find any recognizable digits.Could not find any recognizable digits.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:36:38
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Could not find any recognizable digits.Could not find any recognizable digits.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:36:47
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Could not find any recognizable digits.Could not find any recognizable digits.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 14:37:02
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 15:03:54
+Source			: AppCommon=Decrypt
+Error line number : line 93
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted) in D:\My Codes\Arudha\AlphaAuthentication\Common\AppCommon.cs:line 93
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 15:17:37
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : The input data is not a complete block.The input data is not a complete block.
+Trace message     :    at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(ReadOnlySpan`1 inputBuffer, Span`1 outputBuffer)
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 15:17:49
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Could not find any recognizable digits.Could not find any recognizable digits.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 15:18:03
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Could not find any recognizable digits.Could not find any recognizable digits.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 15:18:07
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 15:18:07
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Could not find any recognizable digits.Could not find any recognizable digits.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 15:18:20
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 15:18:23
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------
+Log date time     : 15-Aug-2023 15:18:23
+Source			: AppCommon=Decrypt
+Error line number : rypted)
+Error message     : Additional non-parsable characters are at the end of the string.Additional non-parsable characters are at the end of the string.
+Trace message     :    at System.ParseNumbers.StringToInt(ReadOnlySpan`1 s, Int32 radix, Int32 flags, Int32& currPos)
+   at System.Convert.ToByte(String value, Int32 fromBase)
+   at AlphaAuthentication.Common.AppCommon.Decrypt(String encrypted)
+Inner Exception   : 
+----------------------------------------------------------------------------------------
+
+

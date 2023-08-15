@@ -1,0 +1,40 @@
+﻿@model AuthenticationModel
+
+<div class="row">
+
+    @if (Model.Authentication)
+    {
+        <div class="col-10">
+            <div class="alert alert-outline-success d-flex align-items-center" role="alert">
+                <span class="fas fa-check-circle text-success fs-3 me-3"></span>
+                <p class="mb-0 flex-1">@Model.Message</p>
+            </div>
+        </div>
+        <div class="col-12 mt-1">
+            <span>
+                <b>First Name:</b> @Model.FirstName
+            </span>
+        </div>
+        <div class="col-12 mt-1">
+            <span>
+                <b>Last Name:</b> @Model.LastName
+            </span>
+        </div>
+        @*<div class="col-12 mt-2">
+            <span>
+                <b>Date of Birth:</b> @Model.DateOfBirth.ToString("MM/dd/yyyy")
+            </span>
+        </div>*@
+    }
+    else
+    {
+
+        <div class="col-10">
+            <div class="alert alert-outline-danger d-flex align-items-center" role="alert">
+                <span class="fas fa-times-circle text-danger fs-3 me-3"></span>
+                <p class="mb-0 flex-1">@Model.Message</p>
+            </div>
+        </div>
+    }
+</div>
+

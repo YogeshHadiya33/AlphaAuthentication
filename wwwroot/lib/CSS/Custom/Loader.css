@@ -1,0 +1,149 @@
+﻿
+.loader-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as desired */
+    z-index: 9999;
+}
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 6px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+    .loader::after,
+    .loader::before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border: 6px solid;
+        border-color: transparent transparent #be2025 #be2025;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        animation: rotationBack 0.5s linear infinite;
+        transform-origin: center center;
+    }
+
+    .loader::before {
+        width: 48px;
+        height: 48px;
+        border-color: #FFF #FFF transparent transparent;
+        animation: rotation 1.5s linear infinite;
+    }
+
+
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+.dataTables_processing {
+    position: relative;
+    border: none; /* Remove the border */
+}
+
+.dataTableLoader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 52px;
+    background-color: #be2025; /* Change the background color here */
+    border-radius: 4px;
+    padding: 10px;
+}
+
+    .dataTableLoader:before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: rgb(190, 32, 37) rgb(255, 255, 255) rgb(255, 255, 255);
+        border-image: none 100% / 1 / 0 stretch;
+        border-radius: 50%;
+        position: absolute;
+        top: 24%;
+        left: 39%;
+        transform: translate(-50%, -50%);
+        animation: custom-rotation 1s linear infinite; /* Change the animation name here */
+    }
+
+@keyframes custom-rotation { /* Change the keyframe name here */
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dataTables_processing:before {
+    content: none; /* Remove the content */
+}
+
+
+.dashboard-loader-container{
+    justify-content:center !important;
+}
+
+
+.dashboard-loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid;
+    border-color: #be2025 transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+ 
+
+@keyframes dashobard-loader-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} 

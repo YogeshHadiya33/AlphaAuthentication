@@ -1,0 +1,105 @@
+﻿
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Authenticate</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <meta name="theme-color" content="#ffffff">
+    <script src="~/Lib/JS/Theme/simplebar.min.js" asp-append-version="true"></script>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="~/lib/css/theme/simplebar.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="~/lib/css/theme/theme.css" rel="stylesheet" type="text/css" id="style-default" asp-append-version="true" />
+    <link href="~/lib/css/custom/custom.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/css/custom/loader.css" rel="stylesheet" asp-append-version="true" />
+    <style>
+        .handCursor {
+            cursor: pointer;
+        }
+        .hide{
+            display:none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+        <div class="preloader">
+            <div class="overlay"></div>
+            <div class="loader-container">
+                <span class="loader"></span>
+            </div>
+        </div>
+        <div class="container-fluid bg-300 dark__bg-1200">
+
+            <div class="bg-holder bg-auth-card-overlay" style="background-image:url(/Lib/Images/bg.png);">
+            </div>
+
+            <div class="row flex-center position-relative min-vh-100 g-0 py-5">
+
+                <div class="col-11 col-sm-10 col-xl-8">
+                    <div class="card border border-200 auth-card">
+                        <div class="card-body pe-md-0">
+                            <div class="row align-items-center gx-0 gy-7">
+                                <div class="col mx-auto">
+                                    @RenderBody()
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="~/Lib/JS/Theme/popper.min.js" asp-append-version="true"></script>
+    <script src="~/Lib/JS/Theme/bootstrap.min.js" asp-append-version="true"></script>
+    <script src="~/Lib/JS/Theme/anchor.min.js" asp-append-version="true"></script>
+    <script src="~/Lib/JS/Theme/is.min.js" asp-append-version="true"></script>
+    <script src="~/Lib/JS/Theme/all.min.js" asp-append-version="true"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="~/Lib/JS/Theme/feather.min.js" asp-append-version="true"></script>
+    <script src="~/lib/js/theme/jquery.min.js" asp-append-version="true"></script>
+    <script src="~/lib/js/theme/jquery.validate.min.js" asp-append-version="true"></script>
+    <script src="~/lib/js/theme/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".preloader").hide();
+        });
+         
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false);
+</body>
+
+</html>
