@@ -39,7 +39,7 @@ namespace AlphaAuthentication.Controllers
                 long.TryParse(AppCommon.Decrypt(id), out authId);
                 int.TryParse(AppCommon.Decrypt(ac), out bpoId);
 
-                var data = _context.Authentication.Find(authId);
+                var data = _context.Authentication.FirstOrDefault(x => x.LeadId == authId);
 
                 if (data == null)
                 {
@@ -47,12 +47,13 @@ namespace AlphaAuthentication.Controllers
                     model.Message = "In-Valid Lead Id";
                     return View(model);
                 }
-              
-                string currentUrl = $"{Request.Scheme}://{Request.Host.Value}";  
+
+                string currentUrl = $"{Request.Scheme}://{Request.Host.Value}";
                 Uri currentUri = new Uri(currentUrl);
                 Uri dbUri = new Uri(data.SourceUrl);
                 string currentHostAndPort = $"{currentUri.Host}:{currentUri.Port}";
                 string dbHostAndPort = $"{dbUri.Host}:{dbUri.Port}";
+
 
                 if (!string.Equals(currentHostAndPort, dbHostAndPort, StringComparison.OrdinalIgnoreCase))
                 {
@@ -72,6 +73,9 @@ namespace AlphaAuthentication.Controllers
                 model.DateOfBirth = data.DateOfBirth;
                 model.Authentication = true;
                 model.Message = "Authentication Success";
+
+                string fullUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host}{HttpContext.Request.Path}{HttpContext.Request.QueryString}";
+                SaveLog(authId, fullUrl);
             }
             catch (Exception ex)
             {
@@ -105,7 +109,7 @@ namespace AlphaAuthentication.Controllers
                 long.TryParse(AppCommon.Decrypt(id), out authId);
                 int.TryParse(AppCommon.Decrypt(ac), out bpoId);
 
-                var data = _context.Authentication.Find(authId);
+                var data = _context.Authentication.FirstOrDefault(x => x.LeadId == authId);
                 if (data == null)
                 {
                     model.Authentication = false;
@@ -137,6 +141,9 @@ namespace AlphaAuthentication.Controllers
                 model.FirstName = data.FirstName;
                 model.LastName = data.LastName;
                 model.Message = "Authentication Success";
+
+                string fullUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host}{HttpContext.Request.Path}{HttpContext.Request.QueryString}";
+                SaveLog(authId, fullUrl);
             }
             catch (Exception ex)
             {
@@ -145,6 +152,28 @@ namespace AlphaAuthentication.Controllers
                 model.Message = AppCommon.ErrorMessage;
             }
             return Json(model);
+        }
+
+        public void SaveLog(long leadId, string url)
+        {
+            try
+            {
+                string ipAddress = HttpContext.Connection.RemoteIpAddress.ToString();
+
+                AuditLog log = new AuditLog
+                {
+                    CreatedOn = DateTime.Now,
+                    LeadId = leadId,
+                    Url = url,
+                    IP = ipAddress,
+                };
+                _context.AuditLog.Add(log);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                AppCommon.LogException(ex, "AuthenticateController=>SaveLog");
+            }
         }
     }
 }

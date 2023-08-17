@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AlphaAuthentication.Migrations
 {
     [DbContext(typeof(AlphaContext))]
-    [Migration("20230815073508_add-columns")]
-    partial class addcolumns
+    [Migration("20230817071326_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -51,6 +51,9 @@ namespace AlphaAuthentication.Migrations
                     b.Property<string>("IP")
                         .IsRequired()
                         .HasColumnType("varchar(50)");
+
+                    b.Property<string>("JsonUrl")
+                        .HasColumnType("varchar(500)");
 
                     b.Property<string>("LastName")
                         .IsRequired()

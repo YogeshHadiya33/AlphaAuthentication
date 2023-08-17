@@ -22,6 +22,34 @@ namespace AlphaAuthentication.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("AlphaAuthentication.Entity.AuditLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("IP")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<long>("LeadId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("varchar(500)");
+
+                    b.HasKey("Id")
+                        .HasName("PK_AuditLog_Id");
+
+                    b.ToTable("AuditLog", (string)null);
+                });
+
             modelBuilder.Entity("AlphaAuthentication.Entity.Authentication", b =>
                 {
                     b.Property<long>("Id")
@@ -49,6 +77,9 @@ namespace AlphaAuthentication.Migrations
                     b.Property<string>("IP")
                         .IsRequired()
                         .HasColumnType("varchar(50)");
+
+                    b.Property<string>("JsonUrl")
+                        .HasColumnType("varchar(500)");
 
                     b.Property<string>("LastName")
                         .IsRequired()

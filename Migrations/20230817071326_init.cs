@@ -22,7 +22,10 @@ namespace AlphaAuthentication.Migrations
                     DateOfBirth = table.Column<DateTime>(type: "date", nullable: false),
                     MobileNumber = table.Column<string>(type: "varchar(20)", nullable: true),
                     EmailAddress = table.Column<string>(type: "varchar(250)", nullable: true),
-                    SourceUrl = table.Column<string>(type: "varchar(500)", nullable: false)
+                    SourceUrl = table.Column<string>(type: "varchar(500)", nullable: false),
+                    JsonUrl = table.Column<string>(type: "varchar(500)", nullable: true),
+                    CreatedOn = table.Column<DateTime>(type: "datetime", nullable: false),
+                    IP = table.Column<string>(type: "varchar(50)", nullable: false)
                 },
                 constraints: table =>
                 {

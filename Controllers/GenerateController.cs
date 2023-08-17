@@ -2,6 +2,7 @@
 using AlphaAuthentication.Entity;
 using AlphaAuthentication.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.RegularExpressions;
 
 namespace AlphaAuthentication.Controllers
 {
@@ -15,27 +16,36 @@ namespace AlphaAuthentication.Controllers
             _context = context;
         }
 
-         
+
         public IActionResult Index()
         {
             return View();
         }
 
-        public PartialViewResult Generate(long id)
+        public PartialViewResult Generate(string id)
         {
             ResponseURLModel model = new ResponseURLModel();
             try
             {
-                var data = _context.Authentication.Find(id);
+                long leadId = 0;
+                string pattern = "[^0-9]";
+                string numericString = Regex.Replace(id, pattern, "");
+                long.TryParse(numericString, out leadId);
+
+                var data = _context.Authentication.FirstOrDefault(x => x.LeadId == leadId);
                 if (data != null)
                 {
                     model.AC = AppCommon.Encrypt(data.BPOId.ToString());
-                    model.Id = AppCommon.Encrypt(data.Id.ToString());
+                    model.Id = AppCommon.Encrypt(data.LeadId.ToString());
                     model.SourceURL = data.SourceUrl;
                     if (data.SourceUrl.LastOrDefault() != '/')
                         data.SourceUrl = data.SourceUrl + "/";
                     model.FullURL = $"{data.SourceUrl}Authenticate?ac={model.AC}&id={model.Id}";
                     model.JsonUrl = $"{data.SourceUrl}Auth?ac={model.AC}&id={model.Id}";
+
+                    data.JsonUrl = model.JsonUrl;
+                    _context.Authentication.Update(data);
+                    _context.SaveChanges();
                     model.Authentication = true;
                 }
                 else

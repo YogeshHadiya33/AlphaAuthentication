@@ -11,6 +11,7 @@
         public string MobileNumber { get; set; }
         public string EmailAddress { get; set; }
         public string SourceUrl { get; set; }
+        public string JsonUrl { get; set; }
         public DateTime CreatedOn { get; set; }
         public string IP { get; set; }
     }
